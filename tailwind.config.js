@@ -1,18 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
-      colors: {
-        // example custom color
-        primary: "#4F46E5",
-      },
       fontFamily: {
-        // example custom font
-        sans: ["Inter", "sans-serif"],
+        sans: ['Space Grotesk', 'sans-serif'],
+      },
+      colors: {
+        background: '#0f172a',
+        surface: '#1e293b',
+        accent: '#38bdf8',
       },
     },
   },
