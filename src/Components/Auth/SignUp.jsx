@@ -43,6 +43,8 @@ const Signup = () => {
           {message && <p className="success-message">{message}</p>}
           {error && <p className="error-message">{error}</p>}
 
+
+
           <div className="input-group">
             <label>Email</label>
             <input

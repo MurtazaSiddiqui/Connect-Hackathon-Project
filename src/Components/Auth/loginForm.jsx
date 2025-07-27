@@ -10,7 +10,7 @@ import { auth } from '@/firebase';
 const Login = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
    const [error, setError] = useState('');
-   const navigate = useNavigate()
+   const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -30,7 +30,7 @@ const Login = () => {
       );
       console.log("Logged in:", userCredential.user);
 
-      navigate('/dashboard')
+       navigate('/dashboard'); 
        
       // redirect or show dashboard
     } catch (err) {

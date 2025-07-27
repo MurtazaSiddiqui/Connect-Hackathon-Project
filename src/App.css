@@ -1293,3 +1293,60 @@ body {
   background: #f56565;
   box-shadow: 0 0 10px rgba(245, 101, 101, 0.5);
 }
+
+.appointment-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.appointment-card {
+  background: black;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card-details p {
+  margin: 4px 0;
+  color: white;
+}
+
+.card-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+.card-details h4{
+  color: #fff;
+  font-weight: 600;
+}
+.btn-logout{
+  /* border: 1px solid #fff !important; */
+  padding: 15px !important;
+  width: auto !important;
+  background: #000 !important;
+  color: #fff !important;
+  border-radius: 12px !important;
+  position: absolute !important;
+  bottom: 20px !important;
+  top: auto !important;
+}
+.dashboard-main .page ul li {
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: start !important;
+        width: 32%;
+        margin-bottom: 20px !important;
+    /* overflow-x: scroll; */
+}
+.request p{
+  display:block !important;
+}
+.page ul{
+  flex-direction: row !important;
+  flex-wrap: wrap;
+}
